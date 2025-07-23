@@ -3,7 +3,7 @@ class File:
         self.fullpath = fullpath
         import os
         self.dirpath = os.path.dirname(self.fullpath)
-        self.filename = os.path.basename(fullpath).replace('.xlsx', '')
+        self.filename = os.path.basename(fullpath).replace('.csv', '')
 
     def load(self):
         from pandas import ExcelFile
